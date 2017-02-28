@@ -1,0 +1,81 @@
+.padding-0 {
+    padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+.bg {
+  background-image: url("designer-wooden-workspace-picjumbo-com.jpg");
+  filter: brightness(0.6);
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+
+}
+
+/*img {
+  overflow: hidden;
+  filter: brightness(0.6);
+  min-height: 100%;
+  min-width: 1024px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+*/
+
+img {
+  filter: brightness(0.7);
+  height: 100vh;
+  width: 100%;
+}
+
+.heroh1 {
+  color: #ffffff;
+  position: relative;
+  top: -10em;
+  left: 10%;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 2px;
+}
+
+.p {
+  position: relative;
+  top: -20em;
+  left: 10%;
+  color: #fff;
+}
+
+.head-btn {
+  position: relative;
+  top: -18em;
+  left: 10%;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.nav-item {
+  color: white;
+  filter: brightness(1);
+}
+
+.nav-link {
+  color: white;
+  filter: brightness(1);
+
+}
+
+ul {
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  filter: brightness(5);
+  position: relative;
+  z-index: 999;
+}
