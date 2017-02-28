@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <script language "Javascript" type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -40,30 +44,101 @@
 -->
 
 
-<div class="wrapper">
-  <ul class="nav">
-    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#">Portfolio</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#">Contacts</a></li>
+<div class="wrapper home">
+<ul class="nav">
+    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#portfolio">Portfolio</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#contacts">Contacts</a></li>
   </ul>
+
+
+
+
     <div class="bg">
+
+
+
+      </div>
+
 
     </div>
 <h1 class="heroh1">Let the creative juices flow</h1>
 <p class="lead p">Web Designer and Developer since 2012</p>
-<button type="button" class="btn btn-primary btn-lg head-btn">Learn More</button>
+<a href="#about"><button type="button" class="btn btn-primary btn-lg head-btn">Learn More</button></a>
 <button type="button" class="btn btn-success btn-lg head-btn">Subscribe</button>
 <!--<img src="designer-wooden-workspace-picjumbo-com.jpg"></img>-->
 </div>
 
+
+
+
+
+
+<div class="container about">
 <div class="row">
-<div class="col-lg-12">
-<h1 class="display text-lg-center">Hello, World</h1>
-<p class="lead text-lg-center">I'm Design enthusiast and geek from Lithuania, currently</br> studying Multimedia Design and Communication in Denmark.</br>I'm open for new projects, so feel free to contact me!</p>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="body_container">
+    <div class="circle"></div>
+<h1 class="display text-lg-center text-md-center text-sm-center text-xs-center body_h1">Hello, World</h1>
+<p class="lead text-lg-center text-md-center text-sm-center text-xs-center">I'm Design enthusiast and geek from Lithuania, currently</br> studying Multimedia Design and Communication in Denmark.</br>I'm open for new projects, so feel free to contact me!</p>
+</div>
+</div>
 </div>
 </div>
 
+<div class="row portfolio">
+<div class="col-lg-12">
+<div class="body_container2">
+<h1 class="display portfolio_h1">Portfolio</h1>
+<img class="portfolio_img img-thumbnail" src="images/Animal Protect tikrai pabaiga.png"</img>
+<img class="portfolio_img img-thumbnail" src="images/Apple elephnat new version v4.png"</img>
+<img class="portfolio_img img-thumbnail" src="images/Barcelonaa.png"</img>
+
+<img class="portfolio_img img-thumbnail" src="images/biketribe logopondui.png"</img>
+<img class="portfolio_img img-thumbnail" src="images/champion news finahl.png"</img>
+<img class="portfolio_img img-thumbnail" src="images/EcoDrive.png"</img>
+</div>
+</div>
+</div>
+
+<div class="row contacts">
+  <div class="col-lg-12">
+  <div class="body_container3">
+<h1 class="display contact_h1">Contact Me</h1>
+<form action="/html/tags/html_form_tag_action.cfm">
+<fieldset class="form-group">
+<label for="first_name">First Name</label>
+<input type="text" class="form-control form-control-lg" id="first_name" name="first_name">
+</fieldset>
+<fieldset class="form-group">
+<label for="last_name">Last Name</label>
+<input type="text" class="form-control form-control-lg" id="last_name" name="last_name">
+</fieldset>
+
+<fieldset class="form-group">
+<label for="last_name">Your message</label>
+<input type="text" class="form-control form-control-lg your_message" id="last_name" name="last_name">
+</fieldset>
+
+<button type="submit" class="btn btn-default btn-lg contact_cta">Submit</button>
+</form>
+
+  </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<div class="footer">
+  <a href="https://twitter.com/LimpulsUX"><img class="social_media_icon" src="images/1488322416_twitter_social_media_online.svg"></img></a>
+  <a href="https://facebook.com/laimis.petravicius"><img class="social_media_icon" src="images/1488322573_facebook_social_media_online.svg"></img></a>
+  <a href="https://github.com/Limpuls"><img class="social_media_icon" src="images/1488322636_github_social_media_online.svg"></img></a>
+  <a href="https://www.behance.net/Limpuls"><img class="social_media_icon" src="images/1488322703_behance_social_media_online.svg"></img></a>
+  <p class="lead">© 2017</p>
+</div>
+</div>
+</div>
 
 
 
@@ -71,8 +146,9 @@
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   </body>
 </html>

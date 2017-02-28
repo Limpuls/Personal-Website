@@ -4,6 +4,7 @@
 
 body {
   overflow-x: hidden;
+
 }
 
 
@@ -78,4 +79,131 @@ ul {
   filter: brightness(5);
   position: relative;
   z-index: 999;
+}
+
+.wrapper {
+  height: 70%;
+}
+
+.body_container {
+  margin-bottom: 10%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  /*height: 100vh;*/
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: red;
+  display: inline-block;
+  background: url(images/laimis.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(50%);
+  margin-bottom: 40px;
+}
+
+.body_h1 {
+  margin-bottom: 20px;
+}
+
+.body_container2 {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #eee;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.portfolio_h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 114px;
+  filter: opacity(20%);
+  position: relative;
+  top: 5%;
+  left: 4%;
+  text-align: left;
+
+}
+
+.portfolio_img {
+  width: 30%;
+  height: auto;
+  filter: brightness(1);
+  margin-bottom: 4px;
+}
+
+.body_container3 {
+  height: 700px;
+  background: #333;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  /*padding-top: 10%;*/
+}
+
+label {
+  color: white;
+  display: inline-block;
+  float: left;
+}
+
+.contact_cta {
+  background: #5cb85c;
+  color: white;
+  width: 150px;
+  float: left;
+}
+
+form {
+  width: 50%;
+  display: inline-block;
+
+}
+
+.your_message {
+  height: 140px;
+}
+
+.contact_h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 114px;
+  filter: opacity(70%);
+  position: relative;
+  right: 5%;
+  top: -70px;
+  text-align: right;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.social_media_icon {
+  width: 4%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 2.5%;
+  height: auto;
+  filter: brightness(1);
+  position: absolute;
+  top: 0;
+  left: 3%;
+  float: left;
+  z-index: 9999;
 }
