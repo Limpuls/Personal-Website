@@ -116,7 +116,6 @@ ul {
   padding-left: 30px;
   padding-right: 30px;
   background: #eee;
-  display: inline-block;
   text-align: center;
   padding-bottom: 10%;
 }
@@ -133,7 +132,8 @@ ul {
 }
 
 .portfolio_img {
-  width: 30%;
+  width: 95%;
+  display: inline-block;
   height: auto;
   filter: brightness(1);
   margin-bottom: 4px;
@@ -206,4 +206,10 @@ form {
   left: 3%;
   float: left;
   z-index: 9999;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

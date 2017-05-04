@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("a").click(function (e) {
+  $(".nav-link").click(function (e) {
     e.preventDefault();
     e.stopPropagation();
     var url = $(this).attr("href");
