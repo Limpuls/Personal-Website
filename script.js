@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("a").click(function (event) {
     if ($(this).attr("href") != "https://github.com/Limpuls?tab=repositories") {
         if ($(this).attr("href") != "https://limpuls.github.io/Javascript-Synth/") {
-      if ($(this).attr("href") != "resume.pdf") {
+      if ($(this).attr("href") != "Resume.pdf") {
 
     event.preventDefault();
     event.stopPropagation();
