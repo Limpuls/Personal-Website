@@ -90,7 +90,16 @@ ul {
   display: inline-block;
   text-align: center;
   width: 100%;
+  padding: 0 15px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s ease-out;
   /*height: 100vh;*/
+}
+
+.body_container.fade-in {
+  opacity: 100;
+    transform: translateY(0);
 }
 
 .circle {
@@ -122,7 +131,7 @@ ul {
 
 .portfolio_h1 {
   font-family: 'PT Sans', sans-serif;
-  font-size: 114px;
+  /*font-size: 114px;*/
   filter: opacity(20%);
   position: relative;
   top: 5%;
@@ -148,19 +157,8 @@ ul {
   /*padding-top: 10%;*/
 }
 
-label {
-  color: white;
-  display: inline-block;
-  float: left;
-}
 
-.contact_cta {
-  background: #5cb85c;
-  color: white;
-  width: 150px;
-  float: left;
-}
-
+/*
 form {
   width: 50%;
   display: inline-block;
@@ -182,6 +180,33 @@ form {
   color: white;
   margin-bottom: 40px;
 }
+*/
+
+.contact h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 60px 0 60px 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.contact_cta {
+  background: #5cb85c;
+  color: white;
+  width: 150px;
+  float: left;
+  margin-top: 15px;
+}
+
+form textarea {
+  resize: none;
+}
 
 .footer {
   height: 200px;
@@ -191,7 +216,7 @@ form {
 }
 
 .social_media_icon {
-  width: 4%;
+  max-width: 50px;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -208,8 +233,182 @@ form {
   z-index: 9999;
 }
 
+
+/*new*/
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+
+header {
+  background-image: url("./1.jpg");
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  /*filter: brightness(0.9);*/
+  opacity: 0.9;
+  background-position: 9% 96%;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  padding: 30px 30px 0px 0px;
+}
+
+nav a {
+  color: white;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+header h1 {
+  padding-top: 120px;
+  color: white;
+  text-align: left;
+  padding-left: 70px;
+  font-weight: bolder;
+}
+
+header p {
+  color: white;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 70px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+header .cta {
+  margin-left: 70px;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 650px) {
+
+  header nav {
+    float: none;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  header nav a:first-child {
+    padding-left: 0;
+  }
+
+  header h1 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header p {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  header .cta {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .btn-lg {
+    line-height: .75;
+  }
+}
+.row > .col-lg-12{padding-right: 0; padding-left: 0;}
+
+.portfolio {
+  background-color: #eee;
+  padding-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.portfolio img {
+  width: 50%;
+  height: auto;
+}
+
+.portfolio h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 60px 0 60px 0;
+}
+
+.portfolio h4 {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.portfolio p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.showcase {
+  background-color: red;
+  opacity: 0.5;
+  height: 325px;
+}
+
+.img_placeholder1 {
+  width: 350px;
+  height: 250px;
+  background-image: url("./images/project3.png");
+  background-size: cover;
+  background-position: 48% 20%;
+}
+
+.img_placeholder2 {
+  width: 350px;
+  height: 250px;
+  background-image: url("./images/project2.png");
+  background-size: cover;
+  background-position: 48% 20%;
+}
+
+.img_placeholder3 {
+  width: 350px;
+  height: 250px;
+  background-image: url("./images/project1.png");
+  background-size: cover;
+  background-position: 48% 20%;
+}
+
+button a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.img-thumbnail {
+  margin: 0 auto;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description p {
+  text-align: center;
+  width: 100%;
 }

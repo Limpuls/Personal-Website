@@ -8,7 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <script language "Javascript" type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <script language "Javascript" type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
     <!-- Bootstrap CSS -->
@@ -16,83 +20,114 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+<body>
+  <div class="container-fluid">
+    <div class="row home">
+      <div class="col-lg-12">
+  <header id="header">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf">Resume</a>
+      <a href="https://github.com/Limpuls?tab=repositories">GitHub</a>
+    </nav>
 
-
-
-<div class="wrapper home">
-<ul class="nav">
-    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#portfolio">Portfolio</a></li>
-    <li class="nav-item"><a class="nav-link active" href="#contacts">Contacts</a></li>
-  </ul>
-
-
-
-
-    <div class="bg">
-
-
-
-      </div>
-
-
+    <h1>Let the creative juice flow</h1>
+    <p>Web Designer and Developer since 2012</p>
+    <div class="cta">
+      <a href="#about"><button type="button" class="btn btn-primary btn-lg">About me</button></a>
+      <button type="button" class="btn btn-success btn-lg"><a href="resume.pdf">Hire me</a></button>
     </div>
-<h1 class="heroh1">Let the creative juices flow</h1>
-<p class="lead p">Web Designer and Developer since 2012</p>
-<a href="#about"><button type="button" class="btn btn-primary btn-lg head-btn">Learn More</button></a>
-<button type="button" class="btn btn-success btn-lg head-btn">Hire me</button>
-<!--<img src="designer-wooden-workspace-picjumbo-com.jpg"></img>-->
+  </header>
+</div>
 </div>
 
 
-
-
-
-
-<div class="container about">
-<div class="row">
+<div class="row about">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="body_container">
     <div class="circle"></div>
 <h1 class="display text-lg-center text-md-center text-sm-center text-xs-center body_h1">Hello, World</h1>
-<p class="lead text-lg-center text-md-center text-sm-center text-xs-center">I'm Design enthusiast and geek from Lithuania, currently</br> studying Multimedia Design and Communication in Denmark.</br>I'm open for new projects, so feel free to contact me!</p>
-</div>
+<p class="lead text-lg-center text-md-center text-sm-center text-xs-center">I'm Multimedia Design and Communication student in Denmark</br> who is writing Javascript by day and producing electronic music by night.</br> Care to know about me more? Check my resume or contact me directly!</p>
 </div>
 </div>
 </div>
 
-<div class="body_container2">
-<h1 class="display portfolio_h1">Portfolio</h1>
 <div class="row portfolio">
-<div class="col-lg-4 col-sm-6">
-<img class="portfolio_img img-thumbnail" src="images/Animal Protect tikrai pabaiga.png"</img>
-</div>
-<div class="col-lg-4 col-sm-6 col-xs-12">
-<img class="portfolio_img img-thumbnail" src="images/Apple elephnat new version v4.png"</img>
-</div>
-<div class="col-lg-4 col-sm-6 col-xs-12">
-<img class="portfolio_img img-thumbnail" src="images/Barcelonaa.png"</img>
-</div>
-<div class="col-lg-4 col-sm-6 col-xs-12">
-<img class="portfolio_img img-thumbnail" src="images/biketribe logopondui.png"</img>
-</div>
-<div class="col-lg-4 col-sm-6">
-<img class="portfolio_img img-thumbnail" src="images/champion news finahl.png"</img>
-</div>
-<div class="col-lg-4 col-sm-6">
-<img class="portfolio_img img-thumbnail" src="images/EcoDrive.png"</img>
-</div>
-</div>
-</div>
-</div>
+    <div class="col-lg-12">
+      <h1>Projects</h1>
+        </div>
+
+
+      <div class="col-lg-4 col-sm-12">
+        <p class="placeholder">Synthesizer in the browser</p>
+        <div class="img_placeholder1 img-thumbnail"></div>
+        <p>Using WEB Audio API</p>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <p class="placeholder">To-do list app</p>
+      <div class="img_placeholder2 img-thumbnail"></div>
+        <p>In Vanilla Javascript</p>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <p class="placeholder">Quiz app with REST API</p>
+        <div class="img_placeholder3 img-thumbnail"></div>
+            <p>Custom made REST API with Node and <br/> MongoDB using express router and CRUD</p>
+      </div>
+      <div class="description">
+
+      </div>
+      <div class="col-lg-12 col-sm-12">
+      <h4><a href="https://github.com/Limpuls?tab=repositories">More projects on GitHub</a></h4>
+    </div>
+
+
+
 </div>
 
-<div class="row contacts">
+
+
+
+
+<div class="row contact">
   <div class="col-lg-12">
-  <div class="body_container3">
-<h1 class="display contact_h1">Contact Me</h1>
+    <h1>Contact me</h1>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <form action="//formspree.io/Limpuls17@gmail.com" method="POST">
+      <fieldset class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="text" class="form-control form-control-lg" id="first_name" name="first_name">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="first_name">Last Name</label>
+        <input type="text" class="form-control form-control-lg" id="last_name" name="last_name">
+      </fieldset>
+      <fieldset>
+        <label for="emailAddress">Email</label>
+        <input type="email" id="emailAddress" class="form-control form-control-lg">
+      </fieldset>
+      <label for="last_name">Your message</label>
+      <textarea class="form-control" rows="4" name="message"></textarea>
+      <button type="submit" class="btn btn-default btn-lg contact_cta clearfix">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="row">
+  <div class="col-lg-12">
 <form action="/html/tags/html_form_tag_action.cfm">
 <fieldset class="form-group">
 <label for="first_name">First Name</label>
@@ -114,7 +149,7 @@
   </div>
   </div>
 </div>
-
+-->
 <div class="row">
 <div class="col-lg-12">
 <div class="footer">
@@ -127,13 +162,14 @@
 </div>
 </div>
 
-
+</div>
 
 
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
