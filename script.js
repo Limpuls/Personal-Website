@@ -2,6 +2,9 @@ $(document).ready(function () {
   $("a").click(function (event) {
     if ($(this).attr("href") != "https://github.com/Limpuls?tab=repositories") {
         if ($(this).attr("href") != "https://limpuls.github.io/Javascript-Synth/") {
+          if ($(this).attr("href") != "http://s1.laimispetravici.us/") {
+            if ($(this).attr("href") != "https://nepal-project-cffb1.firebaseapp.com/") {
+            
       if ($(this).attr("href") != "Resume.pdf") {
 
     event.preventDefault();
@@ -14,6 +17,8 @@ $(document).ready(function () {
     $("html, body").animate({
       scrollTop: $("." + url.split("#")[1]).offset().top
   }, 1000);
+}
+}
 }
 }
 };

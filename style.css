@@ -372,7 +372,7 @@ header .cta {
 .img_placeholder2 {
   width: 350px;
   height: 250px;
-  background-image: url("./images/project2.png");
+  background-image: url("./images/project_4.png");
   background-size: cover;
   background-position: 48% 20%;
 }
@@ -380,7 +380,7 @@ header .cta {
 .img_placeholder3 {
   width: 350px;
   height: 250px;
-  background-image: url("./images/project1.png");
+  background-image: url("./images/project_1.png");
   background-size: cover;
   background-position: 48% 20%;
 }
@@ -411,4 +411,8 @@ a:hover, a:visited, a:link, a:active {
 .description p {
   text-align: center;
   width: 100%;
+}
+
+.project_url {
+  color: #333;
 }
